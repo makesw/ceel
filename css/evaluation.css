@@ -1,0 +1,22 @@
+.header-test{border-bottom: 2px solid #bfbfbf;}
+.content-p h5{color: #bfbfbf;font-weight: 300;margin-bottom: 0;}
+.content-p {padding-top:20px;padding-left: 30px;margin: 20px 0 0 0;min-height: 470px;}
+.content-p h1{color: #55379b;font-weight: 600;}
+.content-p p{color: #000000;font-weight: 300;}
+.content-p .text{font-size:1em;padding-right: 40px;padding-left: 40px;padding-bottom: 20px;animation:mover 1s;-webkit-animation:mover 1s;}
+.content-p .text span{font-weight: 500;}
+.content-p .text .t-fuent{margin-top: 40px;}
+.content-p .text .cuestion{border-bottom: 1px solid #d6d6d6;padding-bottom: 20px;padding-top: 20px;}
+.content-p .text .cuestion:last-child{border: none;}
+.content-p .text .cuestion p{font-weight: 500;}
+.content-p .text .cuestion label{color: #000000;font-weight: 300;font-size: 1em;padding-right: 15px;}
+.content-p .text .cuestion2 label{color: #000000;font-weight: 300;font-size: 1em;padding-right: 15px;}
+.text-final{text-align: center;font-family: 'Roboto', sans-serif;}
+.text-final i{color: #5454a0;font-size: 6em;display: block;margin-top: 20px;}
+.text-final span{color: #12122e;font-size: 2em;font-weight: 600;margin-top: 20px;}
+.text-final p{color: #5c5c5c;width: 40%;margin: 0 auto 20px auto;}
+.text-final p span{font-size: 1em;margin: 10px  0;}
+.text-final button{background: #a8a8de;color: #ffffff;border: none;}
+.text-final button:hover{background: #5454a0;}
+.e-btn-submit{text-align: center;width: 100%;margin: 0;}
+.e-btn-submit input{margin: 0 auto 20px auto; font-size: 2em;}

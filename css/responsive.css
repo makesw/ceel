@@ -1,0 +1,5 @@
+/*Estilos Media Queries */
+@media (min-width: @screen-sm-min) {
+	.menu-dash .item-menu-dash{margin-left: 0;}
+	.menu-dash .lnr{font-size: 4em;}
+}

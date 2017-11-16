@@ -1,0 +1,13 @@
+.row.container-m{max-width: 600px;margin: 0 auto 20px auto;}
+.header{background: #0a0a2b;padding: 20px;font-weight:ver}
+.img_header{background: url(http://localhost/ceel/imagenes/back-header.png) #5a5ab4 no-repeat left;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;text-align: right;padding: 35px 0;color: #ffffff;font-size: 1.3em;font-weight: 300;}
+.img_header .lnr{font-size: 1.5em;font-weight: 500;padding-right: 10px;}
+.text-logo{color: #ffffff;font-style: italic;}
+.titles{margin: 20px 0;}
+.titles h3{color: #5a5ab4;font-weight: 600;font-size: 1.3em;}
+.titles h5{color: #0a0a2b;font-weight: 600;font-size: 1.5em;}
+.footer{background: #dedede; width: 90%;text-align: center;padding-top: 10px;font-size: 0.8em;}
+.footer a{cursor: pointer;text-decoration: none;}
+.call-to{text-align: center;margin:30px 0;}
+.row.container-m .btn-primary{background: #21e9de; color:#0a0a2b; border: none;cursor: pointer;}
+.row.container-m .btn-primary:hover{background: #0a0a2b;color: #ffffff;}
