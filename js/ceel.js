@@ -137,7 +137,7 @@ jQuery(document).on('submit','#form-edit-user', function(event){
 	.always(function(respuesta){ 
 	})
 });
-jQuery(document).on('submit','#form-create-course', function(event){     
+jQuery(document).on('submit','#form-create-course', function(event){
 	var allowedExtensionsImg = /(\.jpg|\.jpeg|\.png)$/i;
 	var allowedExtensionsCompress = /(\.zip)$/i;
 	var iconInput = document.getElementById('iconoCurso');
@@ -150,12 +150,16 @@ jQuery(document).on('submit','#form-create-course', function(event){
 	}else if( contentInput.value!='' && !allowedExtensionsCompress.exec(contentInput.value) ){
 		alert('Contenido inválido, premitido:(.zip).');
 	}else{
+		$('#loadingDiv').show();
+		$(':input[type="submit"]').prop('disabled', true);
 		$.ajax({
 			url: 'actions.php?action=createCourse',
 			type: 'POST',
 			data: new FormData(this),
 			success: function (data) {
-				console.log(data);
+				$('#loadingDiv').hide();
+				 $(':input[type="submit"]').prop('disabled', false);
+				//console.log(data);
 				$('#div-msg-ok').show();
 				setTimeout(function(){
 					$('#div-msg-ok').hide();
@@ -167,7 +171,9 @@ jQuery(document).on('submit','#form-create-course', function(event){
 				},2000);
 			},
 			error: function (data) {
-				console.log(data);
+				$('#loadingDiv').hide();
+				 $(':input[type="submit"]').prop('disabled', false);
+				//console.log(data);
 				$('#div-msg-fail').show();
 				setTimeout(function(){
 					$('#div-msg-fail').hide();

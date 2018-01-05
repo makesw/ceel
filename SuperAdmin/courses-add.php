@@ -141,6 +141,7 @@ date_default_timezone_set('America/Bogota');
 					<i class="fa fa-times" aria-hidden="true"></i> <strong>Error!</strong>
 					<i id="div-msg-fail-desc">Ocurrió un error creando el Curso</i>
 				</div>
+					<div id="loadingDiv"><img src="../assets/img/loadBar.gif"></div>
 					<div>
 						<input type="hidden" name="optButton" id="optButton">
 						<button id="btn_save" type="submit" class="btn btn-default">GUARDAR</button>
@@ -150,7 +151,7 @@ date_default_timezone_set('America/Bogota');
 			</form>
 		</div>
 		<!-- Fin Formulario de creación de curso -->
-
+	
 	</div>
 	<!-- Include Footer-->
 	<?php include("../includes/footer.php"); ?>
@@ -171,6 +172,8 @@ date_default_timezone_set('America/Bogota');
 	$( "#btn_save_back" ).click(function() {
 	  $( "#optButton" ).val("save_back");
 	});
+	
+	$('#loadingDiv').hide();
 </script>
 <?php $connect->close(); ?>
 </html>
