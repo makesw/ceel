@@ -374,7 +374,7 @@ function enviarCorreoRegistro($usuario)
 		</tr>
 		<tr>
 		  <td align="center" style="background-color: #D0D0D0; padding:10px"><p style="font-size:12px; font-weight:200">CEEL Dev siete interactivo 2017 <br>
-					<strong><a href="#" style="color:#0275d8; text-decoration:none; font-size:14px">¿Tienes Preguntas? Contacta al administrador</a></strong></p></td>
+					<strong><a href="'.$RAIZ_CEEL.'" style="color:#0275d8; text-decoration:none; font-size:14px">¿Tienes Preguntas? Contacta al administrador</a></strong></p></td>
 		</tr>
 	  </tbody>
 	</table>
@@ -481,7 +481,7 @@ http://ceel.sieteinteractivo.co/</p></td>
     </tr>
     <tr>
       <td align="center" style="background-color: #D0D0D0; padding:10px"><p style="font-size:12px; font-weight:200">CEEL Dev siete interactivo 2017 <br>
-				<strong><a href="#" style="color:#0275d8; text-decoration:none; font-size:14px">¿Tienes Preguntas? Contacta al administrador</a></strong></p></td>
+				<strong><a href="'.$RAIZ_CEEL.'" style="color:#0275d8; text-decoration:none; font-size:14px">¿Tienes Preguntas? Contacta al administrador</a></strong></p></td>
     </tr>
   </tbody>
 </table>
