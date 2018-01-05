@@ -20,27 +20,16 @@ if ( $action == 'editProfile' ) {
 		$targetPathAvt = "../assets/avatar/".$_SESSION[ 'dataSession' ][ 'id' ].date("YmdHms").".png"; 
 		move_uploaded_file($sourcePathAvt,$targetPathAvt) ; 
 	}	
+	
 	$query = "
-	 UPDATE usuarios 
-	 SET correo = '" . $_POST[ "prof-mail" ] . "', 
-	 codigo = '" . $_POST[ "prof-codigo" ] . "', 
-	 id_cargo = '" . $_POST[ "prof-cargo" ] . "', 
-	 id_sede = '" . $_POST[ "prof-sede" ] . "'";
-	if( $targetPathAvt != NULL  ){
-		$query .= ", url_foto = '" .$targetPathAvt. "'";
-	}	
+	 UPDATE usuarios SET correo = '" . $_POST[ "prof-mail" ] . "'"; 	
 	$query .=" WHERE id =" . $_SESSION[ 'dataSession' ][ 'id' ];	
-
 	$result = $connect->query( $query );
 
 	if( $result == 1 ){
-		//refresh data session:
-		$cargo = mysqli_fetch_array( $connect->query( "SELECT cargo from cargos where id=". $_POST[ "prof-cargo" ] ) );	
-		$sede = mysqli_fetch_array( $connect->query( "SELECT sede from sedes where id=". $_POST[ "prof-sede" ] ) );	
+		//refresh data session:	
 		$_SESSION[ 'dataSession' ][ 'correo' ]=$_POST[ "prof-mail" ];
-		$_SESSION[ 'dataSession' ][ 'codigo' ]=$_POST[ "prof-codigo" ];
-		$_SESSION[ 'dataSession' ][ 'cargo' ]=$cargo[ "cargo" ];
-		$_SESSION[ 'dataSession' ][ 'sede' ]=$sede[ "sede" ];
+		//$_SESSION[ 'dataSession' ][ 'codigo' ]=$_POST[ "prof-codigo" ];
 		if( $targetPathAvt!=NULL ){
 		$_SESSION[ 'dataSession' ][ 'url_foto' ]=$targetPathAvt;
 		}
