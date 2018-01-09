@@ -164,7 +164,7 @@ jQuery(document).on('submit','#form-create-course', function(event){
 				setTimeout(function(){
 					$('#div-msg-ok').hide();
 					if(data.optButton == 'save_back'){
-						window.history.back();
+						location.href= '/SuperAdmin/';
 					}else{
 						location.reload();
 					}			

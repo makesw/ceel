@@ -88,7 +88,7 @@ if( $action!= null && $action=='recordar' ){
 </html>
 ';
 			
-	if(mail('edwin.chia86@gmail.com',$subject,$message,$headers)){
+	if(mail($usuario['correo'],$subject,$message,$headers)){
 		echo json_encode(array('error'=>false,'description'=>'OK'));
 	}else{
 		echo json_encode(array('error'=>true,'description'=>'FAIL'));
