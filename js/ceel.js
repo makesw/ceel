@@ -490,13 +490,18 @@ jQuery(document).on('submit','#formRecord', function(event){
         data: new FormData(this),
         success: function (data) {
             console.log(data);
-			if( !data.error ){
-				$('#div-msg-ok').show();
+			if( data.indexOf("NO_DATA") >= 0){
+				$('#div-msg-noData-record').show();
 				setTimeout(function(){
 					window.location.reload();
 				},2000);
-			}else{
-				$('#div-msg-fail').show();
+			}else if( data.indexOf("FAIL") >= 0){
+				$('#div-msg-fail-record').show();
+				setTimeout(function(){
+					window.location.reload();
+				},2000);
+			}else{				
+				$('#div-msg-ok-record').show();
 				setTimeout(function(){
 					window.location.reload();
 				},2000);

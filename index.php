@@ -114,15 +114,23 @@
 
 									</div>
 
-									<div id="div-msg-ok"  hidden="true" class="alert msg-ceel-ok" 	role="alert">
+									<div id="div-msg-ok-record"  hidden="true" class="alert msg-ceel-ok" 	role="alert">
 
 											<i class="fa fa-check" aria-hidden="true"></i>
 
 										  <strong>Hecho!</strong> <i id="div-msg-ok-desc">Contraseña enviada con Éxito</i>
 
 									</div>
+									
+									<div id="div-msg-noData-record"  hidden="true"  class="alert msg-ceel-fail" role="alert">
 
-									<div id="div-msg-fail"  hidden="true"  class="alert msg-ceel-fail" role="alert">
+											<i class="fa fa-times" aria-hidden="true"></i> <strong>Error!</strong>
+
+											<i id="div-msg-fail-desc">No existe información de usuario con ese correo.</i>
+
+									</div>
+
+									<div id="div-msg-fail-record"  hidden="true"  class="alert msg-ceel-fail" role="alert">
 
 											<i class="fa fa-times" aria-hidden="true"></i> <strong>Error!</strong>
 
