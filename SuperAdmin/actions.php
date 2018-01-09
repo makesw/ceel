@@ -429,7 +429,11 @@ try {
 				mkdir($dir, 0755);
 			}
 			//delete slides of lesson on server:
-			array_map('unlink', glob($dir."/*"));
+			delTree($dir);
+			if(!file_exists ( $dir )){
+				mkdir($dir, 0755);
+			}
+			//array_map('unlink', glob($dir."/*"));			
 			//unzip and load files:
 			$sourcePathCont = $_FILES['archivo']['tmp_name']; 
 			$targetPathCont = $dir."/leccion-".$_POST[ "numeroL" ].".zip"; 
