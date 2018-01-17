@@ -181,8 +181,7 @@ if( $action!= null && $action=='contactar' ){
 		echo json_encode(array('error'=>false,'description'=>'OK'));
 	}else{
 		echo json_encode(array('error'=>true,'description'=>'FAIL'));
-	}
-$connect->close();	
+	}	
 }
 
 function enviarCorreoInvitacion($courseId, $arrayUsuarios)
