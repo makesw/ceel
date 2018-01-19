@@ -30,19 +30,19 @@ if( $action!= null && $action=='recordar' ){
         <td style="padding:20px 0px"><table width="640" border="0" cellspacing="0" cellpadding="0">
           <tbody>
             <tr>
-              <td width="200" align="right"><a href=""><img src="http://ceel.sieteinteractivo.co/assets/img/logo-p.png" alt=""></a></td>
-              <td align="left"><img src="http://ceel.sieteinteractivo.co/imagenes/mailing-titulo.png" alt=""></td>
+              <td width="200" align="right"><a href=""><img src="'.$RAIZ_CEEL.'assets/img/logo-p.png" alt=""></a></td>
+              <td align="left"><img src="'.$RAIZ_CEEL.'imagenes/mailing-titulo.png" alt=""></td>
             </tr>
           </tbody>
         </table>
       </td>
     </tr>
     <tr>
-      <td height="90" style="background-image:url(http://ceel.sieteinteractivo.co/imagenes/headerMail.png)"><table width="640" border="0" cellspacing="0" cellpadding="0">
+      <td height="90" style="background-image:url('.$RAIZ_CEEL.'imagenes/headerMail.png)"><table width="640" border="0" cellspacing="0" cellpadding="0">
   <tbody>
     <tr>
       <td>&nbsp;</td>
-      <td width="60"><img src="http://ceel.sieteinteractivo.co/imagenes/mailing-ico-user.png" alt=""></td>
+      <td width="60"><img src="'.$RAIZ_CEEL.'imagenes/mailing-ico-user.png" alt=""></td>
       <td width="400" align="left" style="color: #FFFFFF; font-size: 24px;">Hola, @'.$usuario['nombres'].' '.$usuario['apellidos'].'</td>
     </tr>
   </tbody>
@@ -119,19 +119,19 @@ if( $action!= null && $action=='contactar' ){
         <td style="padding:20px 0px"><table width="640" border="0" cellspacing="0" cellpadding="0">
           <tbody>
             <tr>
-              <td width="200" align="right"><a href=""><img src="http://ceel.sieteinteractivo.co/assets/img/logo-p.png" alt=""></a></td>
-              <td align="left"><img src="http://ceel.sieteinteractivo.co/imagenes/mailing-titulo.png" alt=""></td>
+              <td width="200" align="right"><a href=""><img src="'.$RAIZ_CEEL.'assets/img/logo-p.png" alt=""></a></td>
+              <td align="left"><img src="'.$RAIZ_CEEL.'imagenes/mailing-titulo.png" alt=""></td>
             </tr>
           </tbody>
         </table>
       </td>
     </tr>
     <tr>
-      <td height="90" style="background-image:url(http://ceel.sieteinteractivo.co/imagenes/headerMail.png)"><table width="640" border="0" cellspacing="0" cellpadding="0">
+      <td height="90" style="background-image:url('.$RAIZ_CEEL.'imagenes/headerMail.png)"><table width="640" border="0" cellspacing="0" cellpadding="0">
   <tbody>
     <tr>
       <td>&nbsp;</td>
-      <td width="60"><img src="http://ceel.sieteinteractivo.co/imagenes/mailing-ico-user.png" alt=""></td>
+      <td width="60"><img src="'.$RAIZ_CEEL.'imagenes/mailing-ico-user.png" alt=""></td>
       <td width="400" align="left" style="color: #FFFFFF; font-size: 24px;">Hola, @Admin</td>
     </tr>
   </tbody>
@@ -309,19 +309,19 @@ function enviarCorreoRegistro($usuario)
 			<td style="padding:20px 0px"><table width="640" border="0" cellspacing="0" cellpadding="0">
 			  <tbody>
 				<tr>
-				  <td width="200" align="right"><a href=""><img src="http://ceel.sieteinteractivo.co/assets/img/logo-p.png" alt=""></a></td>
-				  <td align="left"><img src="http://ceel.sieteinteractivo.co/imagenes/mailing-titulo.png" alt=""></td>
+				  <td width="200" align="right"><a href=""><img src="'.$RAIZ_CEEL.'assets/img/logo-p.png" alt=""></a></td>
+				  <td align="left"><img src="'.$RAIZ_CEEL.'imagenes/mailing-titulo.png" alt=""></td>
 				</tr>
 			  </tbody>
 			</table>
 		  </td>
 		</tr>
 		<tr>
-		  <td height="90" style="background-image:url(http://ceel.sieteinteractivo.co/imagenes/headerMail.png)"><table width="640" border="0" cellspacing="0" cellpadding="0">
+		  <td height="90" style="background-image:url('.$RAIZ_CEEL.'imagenes/headerMail.png)"><table width="640" border="0" cellspacing="0" cellpadding="0">
 	  <tbody>
 		<tr>
 		  <td>&nbsp;</td>
-		  <td width="60"><img src="http://ceel.sieteinteractivo.co/imagenes/mailing-ico-user.png" alt=""></td>
+		  <td width="60"><img src="'.$RAIZ_CEEL.'imagenes/mailing-ico-user.png" alt=""></td>
 		  <td width="400" align="left" style="color: #FFFFFF; font-size: 24px;">Hola, @'.$usuario['nombres'].'</td>
 		</tr>
 	  </tbody>
@@ -408,19 +408,19 @@ function enviarCorreoResultadoExamen($usuario, $curso, $unidad, $nota, $descr, $
         <td style="padding:20px 0px"><table width="640" border="0" cellspacing="0" cellpadding="0">
           <tbody>
             <tr>
-              <td width="200" align="right"><a href=""><img src="http://ceel.sieteinteractivo.co/assets/img/logo-p.png" alt=""></a></td>
-              <td align="left"><img src="http://ceel.sieteinteractivo.co/imagenes/mailing-titulo.png" alt=""></td>
+              <td width="200" align="right"><a href=""><img src="'.$RAIZ_CEEL.'assets/img/logo-p.png" alt=""></a></td>
+              <td align="left"><img src="'.$RAIZ_CEEL.'imagenes/mailing-titulo.png" alt=""></td>
             </tr>
           </tbody>
         </table>
       </td>
     </tr>
     <tr>
-      <td height="90" style="background-image:url(http://ceel.sieteinteractivo.co/imagenes/headerMail.png)"><table width="640" border="0" cellspacing="0" cellpadding="0">
+      <td height="90" style="background-image:url('.$RAIZ_CEEL.'imagenes/headerMail.png)"><table width="640" border="0" cellspacing="0" cellpadding="0">
   <tbody>
     <tr>
       <td>&nbsp;</td>
-      <td width="60"><img src="http://ceel.sieteinteractivo.co/imagenes/mailing-ico-user.png" alt=""></td>
+      <td width="60"><img src="'.$RAIZ_CEEL.'imagenes/mailing-ico-user.png" alt=""></td>
       <td width="400" align="left" style="color: #FFFFFF; font-size: 24px;">Hola, @'.$usuario['nombres'].'</td>
     </tr>
   </tbody>
@@ -469,7 +469,7 @@ function enviarCorreoResultadoExamen($usuario, $curso, $unidad, $nota, $descr, $
     </tr>
     <tr>
       <td align="center"><p style="color:#A3A3A3; font-size:14px; margin-top:2px">Haga click en el boton o copia este link en su navegador:<br>
-http://ceel.sieteinteractivo.co/</p></td>
+'.$RAIZ_CEEL.'</p></td>
     </tr>
     <tr>
       <td align="center">&nbsp;</td>
