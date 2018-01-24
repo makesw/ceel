@@ -26,10 +26,11 @@ $cursoAprobado = mysqli_fetch_array( $connect->query( "SELECT COUNT(1) total FRO
 		<div class="row">
 			<div class="col-md-12">
 				<div class="text-final">
-					<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                	<div class="img"><br><br><img src="../imagenes/grad.png" alt="Felicitaciones"/></div>
+					<!--<i class="fa fa-graduation-cap" aria-hidden="true"></i>-->
 					<span>¡FELICITACIONES!</span>
 					<p>Haz completado el curso de:<br><span>Manejo de recursos y residuos BT</span><br>dale clic al boton y descarga tu certificado</p>
-					<button onclick="location.href = '/Usuario/profile.php'" class="btn btn-primary">DESCARGAR CERTIFICADO</button>
+					<button onclick="javascript:fn_go_to_profile();" class="btn btn-primary">DESCARGAR CERTIFICADO</button>
 				</div>
 			</div>
 		</div>
@@ -46,4 +47,9 @@ $cursoAprobado = mysqli_fetch_array( $connect->query( "SELECT COUNT(1) total FRO
 	}
 ?>
 </html>
+<script>
+	function fn_go_to_profile(){
+		window.top.location.href= '/Usuario/profile.php'		
+	}
+</script>
 <?php $connect->close(); ?>

@@ -5,7 +5,7 @@ if ( !isset( $_SESSION[ 'dataSession' ] ) ) {
 }
 require '../conexion.php';
 $idCourse = $_GET[ 'idCourse' ];
-$curso = mysqli_fetch_array($connect->query("SELECT c.nombre, a.fecha, u.nombres, u.apellidos FROM cursos c JOIN aprobacion_cursos a ON c.id=a.id_curso AND c.id=".$idCourse." JOIN usuarios u ON a.id_usuario = u.id"));
+$curso = mysqli_fetch_array($connect->query("SELECT c.nombre, a.fecha, u.nombres, u.apellidos FROM cursos c JOIN aprobacion_cursos a ON c.id=a.id_curso AND c.id=".$idCourse." JOIN usuarios u ON a.id_usuario = u.id and u.id = ".$_SESSION[ 'dataSession' ]['id']));
 $date_a = new DateTime($curso["fecha"]);
 setlocale (LC_TIME,"spanish");
 date_default_timezone_set('America/Bogota');
@@ -13,7 +13,7 @@ date_default_timezone_set('America/Bogota');
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>CEEL - Certificados de Curso</title>
 <link rel="stylesheet" href="../css/certificate.css">
 <link href="../css/fonts-Roboto.css" rel="stylesheet">
